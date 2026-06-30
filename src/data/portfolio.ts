@@ -124,6 +124,7 @@ export const skills = [
   {
     category: "AI & Machine Learning",
     items: [
+      "Python",
       "TensorFlow",
       "Keras",
       "Computer Vision",
@@ -134,6 +135,7 @@ export const skills = [
       "NumPy",
       "Gradio",
     ],
+    center: true,
   },
 ];
 

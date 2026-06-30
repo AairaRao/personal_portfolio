@@ -24,7 +24,11 @@ export function Skills() {
           className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
         >
           {skills.map((group) => (
-            <motion.div key={group.category} variants={childFade} className="luxe-card p-6 sm:p-7">
+            <motion.div
+              key={group.category}
+              variants={childFade}
+              className={`luxe-card p-6 sm:p-7${"center" in group && group.center ? " sm:col-span-2 sm:col-start-1 lg:col-span-1 lg:col-start-2" : ""}`}
+            >
               <h3 className="font-serif text-lg font-semibold text-rose">{group.category}</h3>
               <div className="mt-5 flex flex-wrap gap-2">
                 {group.items.map((skill) => (
