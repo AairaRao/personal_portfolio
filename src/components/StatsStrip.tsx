@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { childFade, staggerContainer, viewport } from "../lib/motion";
 
 const stats = [
-  { value: "4+", label: "Projects Built" },
+  { value: "6+", label: "Projects Built" },
   { value: "2", label: "Platforms" },
   { value: "2027", label: "Graduating" },
   { value: "Multan", label: "Based In" },

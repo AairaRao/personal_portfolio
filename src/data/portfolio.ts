@@ -6,8 +6,8 @@ export const personalInfo = {
   email: "aairawajahat@gmail.com",
   phone: "+92 334 7475355",
   location: "Multan, Pakistan",
-  github: null as string | null,
-  linkedin: null as string | null,
+  github: "https://github.com/AairaRao",
+  linkedin: "https://www.linkedin.com/in/aairawajahatrao",
   resume: "/resume.pdf",
   availableForWork: true,
 };
@@ -34,12 +34,16 @@ export const industryKeywords = [
   "React",
   "Flutter",
   "Kotlin",
+  "Machine Learning",
+  "TensorFlow",
+  "Computer Vision",
+  "Deep Learning",
 ];
 
 export const about = {
   paragraphs: [
     "I'm a software developer specializing in full-stack and cross-platform mobile development. I ship end-to-end products using Flutter, Kotlin, Firebase, React, and Python — from RESTful APIs and cloud backends to polished, user-centered interfaces.",
-    "My experience includes building scalable e-commerce platforms, HR management systems, and native Android apps with role-based access control (RBAC), real-time databases, and admin dashboards. I follow Agile SDLC practices, Git-based workflows, and clean code principles.",
+    "My experience includes building scalable e-commerce platforms, HR management systems, AI-powered computer vision tools, and native Android apps with role-based access control (RBAC), real-time databases, and admin dashboards. I follow Agile SDLC practices, Git-based workflows, and clean code principles.",
   ],
   highlights: [
     { label: "Role", value: "Full-Stack & Mobile Developer" },
@@ -117,6 +121,20 @@ export const skills = [
       "Scalable Architecture",
     ],
   },
+  {
+    category: "AI & Machine Learning",
+    items: [
+      "TensorFlow",
+      "Keras",
+      "Computer Vision",
+      "CNN",
+      "Grad-CAM",
+      "OpenCV",
+      "Scikit-learn",
+      "NumPy",
+      "Gradio",
+    ],
+  },
 ];
 
 export const projects = [
@@ -134,6 +152,21 @@ export const projects = [
     live: null as string | null,
     featured: true,
     category: "mobile" as const,
+  },
+  {
+    title: "Clothing E-Commerce Website",
+    description:
+      "Full-stack MERN clothing store with separate Customer and Admin portals for shopping and store management.",
+    highlights: [
+      "Responsive React frontend with cart, wishlist, checkout, and order tracking",
+      "RESTful APIs with Node.js & Express backed by MongoDB",
+      "Admin dashboard for products, inventory, and customer orders",
+    ],
+    tags: ["MongoDB", "Express.js", "React", "Node.js", "REST APIs"],
+    github: null,
+    live: null,
+    featured: true,
+    category: "web" as const,
   },
   {
     title: "HR Attendee Application",
@@ -180,6 +213,23 @@ export const projects = [
     live: null,
     featured: true,
     category: "mobile" as const,
+  },
+  {
+    title: "AI Image Forgery Detection System",
+    description:
+      "AI-powered forensic platform for detecting manipulated images using deep learning and error-level analysis.",
+    highlights: [
+      "Dual-Stream CNN with Error Level Analysis (ELA) for image authenticity detection",
+      "Grad-CAM visualization for highlighting manipulated regions in images",
+      "Metadata analysis with copy-move and splicing detection pipelines",
+      "Automated forensic reports stored in SQLite for analysis history",
+      "Model evaluation using accuracy, precision, ROC-AUC, and confusion matrix",
+    ],
+    tags: ["Python", "TensorFlow", "EfficientNetB0", "OpenCV", "Gradio"],
+    github: null,
+    live: null,
+    featured: true,
+    category: "ai" as const,
   },
 ];
 

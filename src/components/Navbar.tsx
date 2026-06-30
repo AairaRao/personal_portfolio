@@ -52,7 +52,12 @@ export function Navbar() {
             );
           })}
           <li className="ml-1">
-            <a href={personalInfo.resume} className="btn-luxe relative z-10 !py-2 !px-4 !text-sm">
+            <a
+              href={personalInfo.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-luxe relative z-10 !py-2 !px-4 !text-sm"
+            >
               Resume
             </a>
           </li>
@@ -89,6 +94,8 @@ export function Navbar() {
             <li className="pt-2">
               <a
                 href={personalInfo.resume}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-luxe relative z-10 w-full justify-center"
                 onClick={() => setMobileOpen(false)}
               >

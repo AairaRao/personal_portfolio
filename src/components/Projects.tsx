@@ -12,7 +12,7 @@ export function Projects() {
           num="03"
           tag="Projects"
           title="Selected creations"
-          description="Four applications spanning mobile commerce, workforce management, flight booking, and native Android."
+          description="Applications spanning mobile and web commerce, workforce management, flight booking, native Android, and AI-powered computer vision."
         />
 
         <motion.div

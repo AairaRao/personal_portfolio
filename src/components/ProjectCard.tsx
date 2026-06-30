@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Globe, Smartphone } from "lucide-react";
+import { Brain, ExternalLink, Github, Globe, Smartphone } from "lucide-react";
 import type { projects } from "../data/portfolio";
 import { childFade } from "../lib/motion";
 
@@ -26,6 +26,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-line bg-surface sm:h-11 sm:w-11">
               {project.category === "mobile" ? (
                 <Smartphone size={18} className="text-gold" />
+              ) : project.category === "ai" ? (
+                <Brain size={18} className="text-gold" />
               ) : (
                 <Globe size={18} className="text-gold" />
               )}
